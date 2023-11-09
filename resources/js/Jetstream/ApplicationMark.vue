@@ -1,0 +1,3 @@
+<template>
+    <img src="/images/application_icon.png" alt="Application Icon">
+</template>

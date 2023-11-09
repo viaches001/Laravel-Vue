@@ -1,0 +1,78 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import "animate.css/animate.css";
+
+@layer utilities {
+    @responsive {
+        /* Page Break Inside */
+        .break-inside-auto
+        {
+            page-break-inside: auto;
+        }
+
+        .break-inside-avoid
+        {
+            page-break-inside: avoid;
+        }
+
+        .break-inside-initial
+        {
+            page-break-inside: initial;
+        }
+
+        .break-inside-inherit
+        {
+            page-break-inside: inherit;
+        }
+
+        /* Page Break After */
+        .break-after-auto
+        {
+            page-break-after: auto;
+        }
+
+        .break-after-always
+        {
+            page-break-after: always;
+        }
+        
+        .break-after-avoid
+        {
+            page-break-after: avoid;
+        }
+        
+        .break-after-left
+        {
+            page-break-after: left;
+        }
+        
+        .break-after-right
+        {
+            page-break-after: right;
+        }
+
+        .break-after-initial
+        {
+            page-break-after: initial;
+        }
+
+        .break-after-inherit
+        {
+            page-break-after: inherit;
+        }
+    }
+}
+
+svg
+{
+    display: inline-block
+}
+
+ul {
+    list-style-type: disc;
+}
+
+:root {
+    --animate-delay: 0.25s;
+}

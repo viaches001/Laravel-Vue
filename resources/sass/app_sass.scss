@@ -1,0 +1,223 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Vue Good Table
+@import "~vue-good-table/src/styles/style.scss";
+
+table.vgt-table
+{
+    border-width: 0px;
+}
+
+.vgt-table thead th
+{
+    padding: 0.4rem 1.75rem 0.4rem 0.75rem;
+    border-width: 0px;
+    white-space: nowrap;
+}
+
+.vgt-table tbody th
+{
+    padding: 0.4rem 0.75rem;
+    border-width: 0px;
+    white-space: nowrap;
+}
+
+.vgt-table.condensed td,
+.vgt-table.condensed th.vgt-row-header
+{
+    padding: 0.4rem 0.75rem;
+}
+
+.vgt-table th.vgt-row-header
+{
+    border-top: 1px solid #dee2e6;
+    border-bottom: 0px;
+    background-color: white;
+}
+
+table.vgt-table tr.clickable:hover
+{
+    background-color: rgba(247, 250, 252)
+}
+
+.vgt-global-search
+{
+    border: 0px;
+    background: none;
+    padding: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.vgt-global-search > .vgt-global-search__input
+{
+    padding: 0px;
+}
+
+.vgt-global-search > .vgt-global-search__input > .input__icon
+{
+    display: none;
+}
+
+.vgt-input
+{
+    height: auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    line-height: 1.5;
+    font-size: inherit;
+}
+
+.vgt-input:focus
+{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(164, 202, 254, 0.45);
+    border-color: #a4cafe;
+}
+
+.vgt-global-search__actions
+{
+    margin: 0px;
+}
+
+.vgt-wrap__footer
+{
+    padding: 0.4rem;
+    border: 0px;
+    background: none;
+}
+
+// Vue Select
+$vs-component-line-height: 1.5;
+$vs-border-color: #d2d6dc;
+$vs-border-radius: 1.5rem;
+$vs-state-active-bg: #4b5563;
+$vs-controls-size: 0.95;
+$vs-dropdown-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+@import "~vue-select/src/scss/vue-select.scss";
+
+.vs__dropdown-toggle
+{
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.vs--open .vs__dropdown-toggle
+{
+    border-bottom-color: $vs-border-color;
+    border-radius: 1.5rem;
+}
+
+.errors .vs__dropdown-toggle, .errors.vs--open .vs__dropdown-toggle
+{
+    border: 1px solid #f98080;
+    box-shadow: 0 0 0 3px rgba(248, 180, 180, 0.45);
+}
+
+.vs__selected, .vs__selected-options, .vs__search, .vs__search:focus
+{
+    margin: 0px;
+    border: 0px;
+    padding-left: 0px;
+}
+
+.vs__selected{
+    display: inline-block;
+    width: calc(100% - 20px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 0;
+}
+
+.vs__search, .vs__search:focus
+{
+    padding: 0 4px 0 0;
+}
+
+.vs__actions
+{
+    padding: 0px;
+}
+
+.vs__dropdown-menu
+{
+    margin-top: 8px;
+    padding: 0px;
+    border-top-style: solid;
+    border-radius: 1.5rem;
+}
+
+.vs__dropdown-menu li
+{
+    padding: 0.5rem 1.5rem;
+}
+
+// Vue2 Date Picker
+$primary-color: #4b5563;
+
+@import '~vue2-datepicker/scss/index.scss';
+
+.mx-datepicker
+{
+    width: auto;
+    min-width: 200px;
+}
+
+.mx-input
+{
+    border: solid #d2d6dc 1px;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    height: auto;
+}
+
+.mx-input:hover, .mx-input:focus
+{
+    border-color: #d2d6dc;
+}
+
+.errors .mx-input
+{
+    border: 1px solid #f98080;
+    box-shadow: 0 0 0 3px rgba(248, 180, 180, 0.45);
+}
+
+.mx-icon-clear, .mx-icon-calendar
+{
+    right: 1.5rem;
+}
+
+.errors .mx-icon-clear, .errors .mx-icon-calendar
+{
+    color: #f98080;
+}
+
+.mx-datepicker-popup
+{
+    margin-top: 8px;
+    border-radius: 1.5rem;
+}
+
+.mx-datepicker-popup
+{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.mx-btn:focus
+{
+    outline: none;
+}
+
+.mx-calendar-content .cell
+{
+    border-radius: 1.5rem;
+}
